@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javaScript.js"></script>
+</head>
+<style>
+    #title {
+        color: green;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+    }
+
+    /* @media only screen and (min-width:600px) {
+        #header{
+        width: 80%;
+    }
+#body{width: 100%;}
+    } */
+
+    #topnav {
+        list-style-type: none;
+        text-align: center;
+
+    }
+
+    #topnav li {
+        display: inline-block;
+        line-height: 40px;
+        padding: 10px;
+    }
+
+    #topnav a {
+        text-decoration: none;
+        color: rgb(121, 118, 118);
+
+    }
+
+    #slideshow {
+        width: 100%;
+        text-align: center;
+    }
+    #slideshow img{
+        width: 60%;
+    }
+
+    /* Body */
+    #living {
+        width: 55%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 20px;
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
+        text-align: center;
+    }
+
+    #living .col-3 {
+        width: 100%;
+        height: 100%;
+        line-height: -100px;
+    }
+    #living .col-3 .card{
+        width: 100%;
+        height: 60%;
+    }
+    
+
+    #living .col-3 .card img {
+        width: 100%;
+        height: 100%;
+    }
+    .banner{
+        width: 80%;
+        margin: auto;
+        height: 500px;
+        background-image: url("./image/banner.jpg");
+    }
+    .banner #content{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(255, 250, 250);
+        opacity: 0.5;
+    }
+    .button{
+        padding: 16px;
+        color: snow;
+        background-color: green;
+    }
+</style>
+
+<body onload="loadroom()">
+    <div>
+        <div style="background-color: bisque;" id="header">
+            <header id="title">MISA SOCHU</header>
+            <div id="menu">
+                <ul id="topnav">
+                    <li><a href="">LIVING ROOM</a></li>
+                    <li><a href="">DINING</a></li>
+                    <li><a href="">BEDROOM</a></li>
+                    <li><a href="">HOME OFFICE</a></li>
+                    <li><a href="">APPLIANCE</a></li>
+                    <li><a href="">MATTRESSES</a></li>
+                </ul>
+            </div>
+            <div class="slideshow" id='slideshow'>
+                <img src="" id="ima" width="832" height="350">
+            </div>
+        </div>
+        <div style="background-color: burlywood;">
+            <section class="living-room">
+                <h2 id="title">LIVING ROOM</h2>
+                <div id="living"></div>
+            </section>
+            <section class="banner">
+                <div id="content">
+                    <h3 class="title">LIVING ROOM</h3>
+                    <p>LIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOM
+                        LIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOM
+                        LIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOM
+                        LIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOM
+                        LIVING ROOMLIVING ROOMLIVING ROOMLIVING ROOM
+                    </p>
+                    <button class="button" type="submit">LIVING ROOM</button>
+                </div>
+            </section>
+        </div>
+        <hr>
+        <div style="background-color: cadetblue;" class="bottom">
+            <ul id="topnav">
+                <li><a href="">LIVING ROOM</a></li>
+                <li><a href="">DINING</a></li>
+                <li><a href="">BEDROOM</a></li>
+                <li><a href="">HOME OFFICE</a></li>
+                <li><a href="">APPLIANCE</a></li>
+                <li><a href="">MATTRESSES</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
